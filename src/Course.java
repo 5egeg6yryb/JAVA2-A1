@@ -1,146 +1,153 @@
 import java.util.Date;
 
 public class Course {
-    private String Institution;
-    private String Course_Number;
-    private Date Launch_Date;
-    private String CourseBF_Title;
-    private String Instructors;
-    private String CourseBF_Subject;
-    private int Year;
-    private int Honor_Code_Certificates;
-    private int Participants;
-    private int Audited;
-    private int Certified;
-    private double Audited_p;
-    private double Certified_p;
-    private double Certified_50;
-    private double Played_Video;
-    private double Posted_in_Forum;
-    private double Grade_Higher_Than_Zero;
-    private double Total_CourseBF_Hours;
-    private double Median_Hours_for_Certification;
-    private double Median_Age;
-    private double Male;
-    private double Female;
-    private double Bachelor_Degree;
+
+  private String institution;
+  private String courseNumber;
+  private Date launchDate;
+  private String coursebfTitle;
+  private String instructors;
+  private String courseBFSubject;
+  private int year;
+  private int honorCodeCertificates;
+  private int participants;
+  private int audited;
+  private int certified;
+  private double auditedP;
+  private double certifiedP;
+  private double certified50;
+  private double playedVideo;
+  private double postedInForum;
+  private double gradeHigherThanZero;
+  private double totalCourseBFHours;
+  private double medianHoursForCertification;
+  private double medianAge;
+  private double male;
+  private double female;
+  private double bachelorDegree;
 
 
-    public Course(String institution, String course_Number, Date launch_Date, String courseBF_Title, String instructors, String courseBF_Subject, int year, int honor_Code_Certificates, int participants, int audited, int certified, double audited_p, double certified_p, double certified_50, double played_Video, double posted_in_Forum, double grade_Higher_Than_Zero, double total_CourseBF_Hours, double median_Hours_for_Certification, double median_Age, double male, double female, double bachelor_Degree) {
-        Institution = institution;
-        Course_Number = course_Number;
-        Launch_Date = launch_Date;
-        CourseBF_Title = courseBF_Title;
-        Instructors = instructors;
-        CourseBF_Subject = courseBF_Subject;
-        Year = year;
-        Honor_Code_Certificates = honor_Code_Certificates;
-        Participants = participants;
-        Audited = audited;
-        Certified = certified;
-        Audited_p = audited_p;
-        Certified_p = certified_p;
-        Certified_50 = certified_50;
-        Played_Video = played_Video;
-        Posted_in_Forum = posted_in_Forum;
-        Grade_Higher_Than_Zero = grade_Higher_Than_Zero;
-        Total_CourseBF_Hours = total_CourseBF_Hours;
-        Median_Hours_for_Certification = median_Hours_for_Certification;
-        Median_Age = median_Age;
-        Male = male;
-        Female = female;
-        Bachelor_Degree = bachelor_Degree;
-    }
+  public Course(String institution, String courseNumber, Date date, String courseBFTitle,
+      String instructors, String courseBFSubject, int year, int honorCodeCertificates,
+      int participants, int audited, int certified, double auditedP, double certifiedP,
+      double certified50, double playedVideo, double postedInForum,
+      double gradeHigherThanZero, double totalCourseBFHours,
+      double medianHoursForCertification, double medianAge, double male, double female,
+      double bachelorDegree) {
+    this.institution = institution;
+    this.courseNumber = courseNumber;
+    launchDate = date;
+    coursebfTitle = courseBFTitle;
+    this.instructors = instructors;
+    this.courseBFSubject = courseBFSubject;
+    this.year = year;
+    this.honorCodeCertificates = honorCodeCertificates;
+    this.participants = participants;
+    this.audited = audited;
+    this.certified = certified;
+    this.auditedP = auditedP;
+    this.certifiedP = certifiedP;
+    this.certified50 = certified50;
+    this.playedVideo = playedVideo;
+    this.postedInForum = postedInForum;
+    this.gradeHigherThanZero = gradeHigherThanZero;
+    this.totalCourseBFHours = totalCourseBFHours;
+    this.medianHoursForCertification = medianHoursForCertification;
+    this.medianAge = medianAge;
+    this.male = male;
+    this.female = female;
+    this.bachelorDegree = bachelorDegree;
+  }
 
-    public String getInstitution() {
-        return Institution;
-    }
+  public String getInstitution() {
+    return institution;
+  }
 
-    public String getCourse_Number() {
-        return Course_Number;
-    }
+  public String getCourseNumber() {
+    return courseNumber;
+  }
 
-    public Date getLaunch_Date() {
-        return Launch_Date;
-    }
+  public Date getLaunchDate() {
+    return launchDate;
+  }
 
-    public String getCourseBF_Title() {
-        return CourseBF_Title;
-    }
+  public String getCoursebfTitle() {
+    return coursebfTitle;
+  }
 
-    public String getInstructors() {
-        return Instructors;
-    }
+  public String getInstructors() {
+    return instructors;
+  }
 
-    public String getCourseBF_Subject() {
-        return CourseBF_Subject;
-    }
+  public String getCourseBFSubject() {
+    return courseBFSubject;
+  }
 
-    public int getYear() {
-        return Year;
-    }
+  public int getYear() {
+    return year;
+  }
 
-    public int getHonor_Code_Certificates() {
-        return Honor_Code_Certificates;
-    }
+  public int getHonorCodeCertificates() {
+    return honorCodeCertificates;
+  }
 
-    public int getParticipants() {
-        return Participants;
-    }
+  public int getParticipants() {
+    return participants;
+  }
 
-    public int getAudited() {
-        return Audited;
-    }
+  public int getAudited() {
+    return audited;
+  }
 
-    public int getCertified() {
-        return Certified;
-    }
+  public int getCertified() {
+    return certified;
+  }
 
-    public double getAudited_p() {
-        return Audited_p;
-    }
+  public double getAuditedP() {
+    return auditedP;
+  }
 
-    public double getCertified_p() {
-        return Certified_p;
-    }
+  public double getCertifiedP() {
+    return certifiedP;
+  }
 
-    public double getCertified_50() {
-        return Certified_50;
-    }
+  public double getCertified50() {
+    return certified50;
+  }
 
-    public double getPlayed_Video() {
-        return Played_Video;
-    }
+  public double getPlayedVideo() {
+    return playedVideo;
+  }
 
-    public double getPosted_in_Forum() {
-        return Posted_in_Forum;
-    }
+  public double getPostedInForum() {
+    return postedInForum;
+  }
 
-    public double getGrade_Higher_Than_Zero() {
-        return Grade_Higher_Than_Zero;
-    }
+  public double getGradeHigherThanZero() {
+    return gradeHigherThanZero;
+  }
 
-    public double getTotal_CourseBF_Hours() {
-        return Total_CourseBF_Hours;
-    }
+  public double getTotalCourseBFHours() {
+    return totalCourseBFHours;
+  }
 
-    public double getMedian_Hours_for_Certification() {
-        return Median_Hours_for_Certification;
-    }
+  public double getMedianHoursForCertification() {
+    return medianHoursForCertification;
+  }
 
-    public double getMedian_Age() {
-        return Median_Age;
-    }
+  public double getMedianAge() {
+    return medianAge;
+  }
 
-    public double getMale() {
-        return Male;
-    }
+  public double getMale() {
+    return male;
+  }
 
-    public double getFemale() {
-        return Female;
-    }
+  public double getFemale() {
+    return female;
+  }
 
-    public double getBachelor_Degree() {
-        return Bachelor_Degree;
-    }
+  public double getBachelorDegree() {
+    return bachelorDegree;
+  }
 }
